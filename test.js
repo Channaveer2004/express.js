@@ -71,7 +71,7 @@ app.post("/api/users", (req, res) => {
     // console.log("hi")
 
     if (!body.first_name || !body.last_name || !body.email) {
-        return res.status(404).json({ status: "error", message: "invalid data" })
+        return res.status(404).json({ status: "error", message: "invalid data entered" })
     }
 
     const newUser = { ...body, id: users.length + 1 }
