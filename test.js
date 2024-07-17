@@ -77,7 +77,7 @@ app.post("/api/users", (req, res) => {
     const newUser = { ...body, id: users.length + 1 }
     users.push(newUser)
 
-    fs.writeFile("./MOCK_DATA.json", JSON.stringify(users), (err, data) => {
+    fs.writeFile("./MOCK_DATA.json", JSON.stringify(users), (err) => {
         if (err) {
             res.status(500).json({ message: "Failed to add user" })
         }
