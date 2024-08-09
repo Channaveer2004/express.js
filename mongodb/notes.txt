@@ -1,0 +1,19 @@
+
+1. `show dbs` - Displays all databases.
+2. `use <database_name>` - Switches to a specified database.
+3. `db.createCollection(<collection_name>)` - Creates a new collection.
+4. `db.<collection_name>.insertOne({<document>})` - Inserts a single document.
+5. `db.<collection_name>.insertMany([{<document1>}, {<document2>}])` - Inserts multiple documents.
+6. `db.<collection_name>.find()` - Retrieves all documents in a collection.
+7. `db.<collection_name>.find({<query>})` - Retrieves documents matching a query.
+8. `db.<collection_name>.updateOne({<filter>}, { $set: {<update>}})` - Updates a single document.
+9. `db.<collection_name>.updateMany({<filter>}, { $set: {<update>}})` - Updates multiple documents.
+10. `db.<collection_name>.deleteOne({<filter>})` - Deletes a single document.
+11. `db.<collection_name>.deleteMany({<filter>})` - Deletes multiple documents.
+12. `db.dropDatabase()` - Drops the current database.
+13. `db.<collection_name>.drop()` - Drops a collection.
+14. `db.createIndex({<field>: 1})` - Creates an index on a field (ascending).
+15. `db.getIndexes()` - Lists all indexes on a collection.
+16. `db.<collection_name>.dropIndex(<index_name>)` - Drops a specified index.
+17. `show collections` - Displays all collections in the current database.
+
