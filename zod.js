@@ -16,8 +16,6 @@ app.post("/health-checkup",  function (req, res) {
   })
 });
 
-
-
 // Define a Zod schema for user registration
 const userSchema = z.object({
     username: z.string().min(3, 'Username must be at least 3 characters long'),
