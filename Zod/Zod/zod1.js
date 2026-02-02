@@ -4,7 +4,6 @@
 
 const zod = require('zod');
 
-
 // If this is array of numbers with atleast 1 input, return true else return false
 
 function validateInput(arr) {
